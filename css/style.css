@@ -1,0 +1,537 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/* Styling a navbar */
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 85vw;
+    margin: 0px auto;
+    height: 80px;
+}
+
+.navlogo img {
+    width: 10vw;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+nav ul li :hover {
+    color: white;
+    background-color: #143679;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+.join {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 3px;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: all 0.3s;
+}
+
+.join:hover {
+    background-color: rgb(19, 19, 96);
+    color: white;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger img {
+    width: 25px;
+}
+
+.navclose {
+    display: none;
+}
+
+.navclose img {
+    width: 25px;
+}
+
+/* section-1 styling */
+
+.section-1 {
+    background: url(../image/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: calc(100vh - 80px);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.section-1::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    background-color: #0c2454;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+}
+
+.section-contents {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-1-head {
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.section-1-details {
+    text-align: center;
+    width: 70%;
+}
+
+.section-1-btn button {
+    padding: 12px 17px;
+    border: none;
+    font-weight: 900;
+    border-radius: 5px;
+}
+
+.section-1-btn .learnmore {
+    background-color: #0c2454;
+    color: white;
+}
+
+.section-1-btn .visitcourses {
+    background-color: rgb(255, 208, 0);
+    color: white;
+}
+
+
+/* section-2 styling */
+.section-2 {
+    padding: 70px 0px;
+}
+
+.section-2-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85vw;
+    margin: 0px auto;
+    gap: 15px;
+}
+
+.section-2-details {
+    display: flex;
+    gap: 10px;
+    padding-top: 25px;
+}
+
+.section-2-head {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.section-2-details .img {
+    width: 35px;
+}
+
+.scholor {
+    padding: 20px;
+    background-color: #ecf1fb;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+}
+
+.onlinecourse {
+    padding: 20px;
+    background-color: #ecf1fb;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+}
+
+.certification {
+    padding: 20px;
+    background-color: #ecf1fb;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+}
+
+.section-2-details-all-head {
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.section-2-details-all-discription {
+    color: rgb(118, 118, 118);
+    font-size: 15px;
+}
+
+.section-2-discription {
+    text-align: center;
+}
+
+/* Section 3 styling*/
+
+
+.section-3-course {
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin: 0px auto;
+}
+
+.section-3-course-head {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.section-3-course-discription {
+    color: rgb(118, 118, 118);
+}
+
+.section-3-courses-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding-top: 20px;
+}
+
+.coursebox {
+    background-color: #ecf1fb;
+    position: relative;
+    width: 27vw;
+
+}
+
+.coursebox .img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.coursedetails {
+    padding: 20px;
+}
+
+.time {
+    font-size: 14px;
+    padding-bottom: 5px;
+    color: rgb(118, 118, 118);
+
+}
+
+.coursetopic {
+    font-weight: 700;
+}
+
+.courseprice {
+    font-size: 13px;
+    background-color: #0c2454;
+    color: white;
+    border-radius: 100%;
+    width: 55px;
+    padding: 17px 5px;
+    position: absolute;
+    bottom: 75px;
+    right: 20px;
+}
+
+.review {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+
+/* Styling section 4  */
+
+.section-4 {
+    margin-top: 50px;
+    background: url(../image/signup.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.section-4::before {
+    content: '';
+    background-color: #0c3892;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    opacity: 0.5;
+}
+
+.section-4-register-container {
+    margin: 100px auto;
+    width: 85vw;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    padding: 20px;
+}
+
+
+.section-4-leftbox p {
+    color: white;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.section-4-leftbox h2 {
+    color: white;
+    font-size: 45px;
+    font-weight: 900;
+    padding-bottom: 50px;
+}
+
+.section-4-time {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.section-4-time span {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.369);
+    padding: 25px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+
+.section-4-rightbox form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 28px;
+    border-radius: 5px;
+    gap: 25px;
+    align-items: center;
+
+}
+
+.section-4-formhead {
+    font-weight: 700;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.inputbox {
+    width: 100%;
+    text-align: center;
+}
+
+.section-4-rightbox form input {
+    padding: 10px;
+    width: 90%;
+    border: 1px solid black;
+}
+
+.formbtn button {
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(248, 217, 42);
+    color: white;
+    border-radius: 5px;
+}
+
+/* Section 5 styling */
+
+.section-5 {
+    margin: 60px 0px;
+}
+
+.section-5-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-5-container h2 {
+    font-size: 30px;
+    font-weight: 900;
+    padding: 15px 0px;
+}
+
+.section-5-container p {
+    color: grey;
+    text-align: center;
+}
+
+.section-5-profilecontainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.section-5-profilebox {
+    background-color: rgb(246, 246, 242);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-5-profilebox p {
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.section-5-profileboxsocial {
+    padding-top: 10px
+}
+
+.section-5-profileboxsocial img {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+
+/* Styling footer */
+
+footer {
+    background-color: #091938;
+    color: white;
+}
+
+.footer-container {
+    width: 85vw;
+    margin: 0px auto;
+    padding: 60px 0px;
+}
+
+.footerupperboxes {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.footerupperbox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footerupperbox div {
+    font-size: 16px;
+    padding-bottom: 15px;
+    font-weight: 900;
+}
+
+
+.footerupperbox span {
+    font-size: 12px;
+    color: grey;
+}
+
+.footerupperbox span a {
+    text-decoration: none;
+    color: grey;
+}
+
+.footersubscribe input,
+button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.footersubscribe input {
+    background-color: #143679;
+
+}
+
+.footersubscribe button {
+    background-color: rgb(219, 188, 12);
+}
+
+.footersubscribe button:hover {
+    background-color: gold;
+}
+
+.footerlowerboxes {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footercopyright {
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.footersocial img {
+    background-color: rgba(255, 255, 255);
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
